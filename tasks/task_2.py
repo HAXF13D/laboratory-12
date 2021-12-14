@@ -68,19 +68,27 @@ def main():
 
     start_time = timeit.default_timer()
     factorial_rec(number)
-    print("Execution factorial_rec time is :", timeit.default_timer() - start_time)
+    print("Execution factorial_rec time is :",
+          timeit.default_timer() - start_time
+          )
 
     start_time = timeit.default_timer()
     factorial_iter(number)
-    print("Execution factorial_iter time is :", timeit.default_timer() - start_time)
+    print("Execution factorial_iter time is :",
+          timeit.default_timer() - start_time
+          )
 
     start_time = timeit.default_timer()
     fib_rec(number)
-    print("Execution fib_rec time is :", timeit.default_timer() - start_time)
+    print("Execution fib_rec time is :",
+          timeit.default_timer() - start_time
+          )
 
     start_time = timeit.default_timer()
     fib_iter(number)
-    print("Execution fib_iter time is :", timeit.default_timer() - start_time)
+    print("Execution fib_iter time is :",
+          timeit.default_timer() - start_time
+          )
 
 
 if __name__ == '__main__':

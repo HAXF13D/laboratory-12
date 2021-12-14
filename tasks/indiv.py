@@ -11,7 +11,8 @@ def rec_func(a, i=0, k=0):
     elif a[i] < 0:
         return 0, k
     else:
-        return a[i] + rec_func(a, i + 1, k + 1)[0], rec_func(a, i + 1, k + 1)[1]
+        return a[i] + rec_func(a, i + 1, k + 1)[0], \
+               rec_func(a, i + 1, k + 1)[1]
 
 
 def main():

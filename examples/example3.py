@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 def cursing(depth):
     try:
         cursing(depth + 1)  # actually, re-cursing
