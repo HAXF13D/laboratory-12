@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from functools import lru_cache
 import timeit
 
 
+@lru_cache
 def factorial_rec(n, acc=1):
     if n == 0:
         return acc
     return factorial_rec(n - 1, n * acc)
 
 
+@lru_cache
 def fib_rec(i, current=0, next=1):
     if i == 0:
         return current
@@ -38,7 +41,7 @@ def fib_iter(n):
 
 def main():
 
-    number = 500
+    number = 250
 
     start_time = timeit.default_timer()
     factorial_rec(number)
